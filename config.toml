@@ -3,19 +3,19 @@
 
 baseURL = "https://javioustlj.github.io"
 title = "Tian Javious 夏田墨 的 博客"
-languageCode = "zh-cn"
-hasCJKLanguage = false
+languageCode = "zh-CN"
+hasCJKLanguage = true
 # Copyright information (Markdown supported)
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+copyright = "在保留本文作者及本文链接的前提下，非商业用途随意转载分享。"
 
 # Name of theme
 theme = "meme"
 
 # `hugo new` automatically opened text editor
-newContentEditor = ""
+newContentEditor = "editplus"
 
 # i18n
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 
 # Pluralize titles in lists?
@@ -31,10 +31,10 @@ enableEmoji = false
 footnoteReturnLinkContents = "↩"
 
 # Enable `.GitInfo` object for each page?
-enableGitInfo = false
+enableGitInfo = true
 
 # Enable generation of `robots.txt` file?
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # Number of items per page in paginated
 # lists (valid for the `posts` homepage
@@ -53,7 +53,7 @@ uglyURLs = false
 
 # Taxonomies
 [taxonomies]
-    category = "categories"
+    #category = "categories"
     tag = "tags"
 
 # Modified date
@@ -209,42 +209,84 @@ uglyURLs = false
     #     weight = 1
     #     pre = "internal"
     #     post = "home"
-    [[menu.main]]
-        pageref = "/posts/"
-        name = "Posts"
-        weight = 2
-        pre = "internal"
-        post = "archive"
-    [[menu.main]]
-        pageref = "/categories/"
-        name = "Categories"
-        weight = 3
-        pre = "internal"
-        post = "th"
-    [[menu.main]]
-        pageref = "/tags/"
-        name = "Tags"
-        weight = 4
-        pre = "internal"
-        post = "tags"
-    [[menu.main]]
-        pageref = "/about/"
-        name = "About"
-        weight = 5
-        pre = "internal"
-        post = "user-circle"
+    #[[menu.main]]
+    #    pageref = "/posts/"
+    #    name = "Posts"
+    #    weight = 2
+    #    pre = "internal"
+    #    post = "archive"
+    #[[menu.main]]
+    #    pageref = "/categories/"
+    #    name = "Categories"
+    #    weight = 3
+    #    pre = "internal"
+    #    post = "th"
+    #[[menu.main]]
+    #    pageref = "/tags/"
+    #    name = "Tags"
+    #    weight = 4
+    #    pre = "internal"
+    #    post = "tags"
+    #[[menu.main]]
+    #    pageref = "/about/"
+    #    name = "About"
+    #    weight = 5
+    #    pre = "internal"
+    #    post = "user-circle"
     [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
     [[menu.main]]
         weight = 7
         identifier = "lang-switcher"
+    #[[menu.main]]
+    #    weight = 8
+    #    identifier = "search"
+    #    post = "search"
     [[menu.main]]
-        weight = 8
-        identifier = "search"
-        post = "search"
+        pageref = "/life/"
+        name = "生活"
+        weight = 1
+        pre = "internal"
+        post = "grav"
+        identifier = "life"
+    [[menu.main]]
+        pageref = "/tech/"
+        name = "技术"
+        weight = 2
+        pre = "internal"
+        post = "wpexplorer"
+        identifier = "tech"
+    [[menu.main]]
+        pageref = "/about/"
+        name = "关于"
+        weight = 3
+        pre = "internal"
+        post = "user-circle"
+        identifier = "about"
 
+    [[menu.socials]]
+        url = "https://github.com/javioustlj"
+        name = "GitHub"
+        weight = 1
+        pre = "external"
 
+    ## 链接栏
+    [[menu.links]]
+        pageref = "/"
+        name = "Home"
+        weight = 1
+        pre = "internal"
+    [[menu.links]]
+        pageref = "/tags/"
+        name = "Tags"
+        weight = 2
+        pre = "internal"
+    [[menu.links]]
+        pageref = "/coldplay/"
+        name = "Coldplay"
+        weight = 3
+        pre = "internal"
 
 ##########################################
 # Theme Settings
@@ -294,17 +336,17 @@ uglyURLs = false
     # family can be configured in typography
     # section at the bottom of this file.
     # Unit: em
-    siteBrandFontSize = 1
+    siteBrandFontSize = 2
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
     ######################################
     # Menu Bar
 
-    enableMenu = true
+    enableMenu = false
     # Note: invalid for header layout flex
 
-    displayMenuInHome = true
+    displayMenuInHome = false
     # Note: invalid for header layout flex
 
     # Highlight current menu item by section?
@@ -325,11 +367,11 @@ uglyURLs = false
     # 3. posts     List of post’s summary
     # 4. page      Normal page/post
 
-    homeLayout = "posts"
+    homeLayout = "poetry"
 
     ## Poetry
     # Verse (Markdown supported)
-    homePoetry = []
+    homePoetry = ["归山深浅去", "须尽丘壑美", "莫学武陵人", "暂游桃源里"]
     # Padding of links at the bottom
     # Unit: em
     homeLinksPadding = 1
@@ -353,11 +395,11 @@ uglyURLs = false
     siteLogo = "/icons/apple-touch-icon.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
+    siteDescription = "这是夏田墨的博客！春田青不知是否还会有人记得呢"
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2022-03-19T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
@@ -391,7 +433,7 @@ uglyURLs = false
     # tree organization structure of your
     # posts.
 
-    categoryBy = "categories"
+    categoryBy = "sections"
     # ATTENTION: If you set it to `sections`,
     #            be sure to delete `categories`
     #            in `taxonomies` at the top
