@@ -834,12 +834,12 @@ uglyURLs = false
     ######################################
     # Post Meta Info
 
-    enablePostMeta = true
+    enablePostMeta = false
     # Note: *global settings*
     #       `meta` in post’s Front Matter
     #       has a higher priority than here
 
-    enablePostMetaInHome = true
+    enablePostMetaInHome = false
     # Note: valid for the `posts` and
     #       `page` homepage layout only
 
