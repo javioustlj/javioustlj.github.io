@@ -2,7 +2,7 @@
 # Site Settings
 
 baseURL = "https://javioustlj.github.io"
-title = "Tian Javious 夏田墨 的 博客"
+title = "夏田墨"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # Copyright information (Markdown supported)
