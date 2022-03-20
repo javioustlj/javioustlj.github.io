@@ -1,8 +1,6 @@
 ---
 title: "About"
 date: 2022-03-20T12:11:18+08:00
-tags = []
-slug = ""
 draft: false
 ---
 
