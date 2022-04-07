@@ -257,13 +257,20 @@ uglyURLs = false
         pre = "internal"
         post = "grav"
         identifier = "book"
+#    [[menu.main]]
+#        pageref = "/tech/"
+#        name = "技术"
+#        weight = 3
+#        pre = "internal"
+#        post = "wpexplorer"
+#        identifier = "tech"
     [[menu.main]]
-        pageref = "/tech/"
-        name = "技术"
+        pageref = "/poetry/"
+        name = "诗作"
         weight = 3
         pre = "internal"
-        post = "wpexplorer"
-        identifier = "tech"
+        post = "leaf"
+        identifier = "poetry"
     [[menu.main]]
         pageref = "/about/"
         name = "关于"
