@@ -1,0 +1,183 @@
+.home {
+    font-family: 'Noto Serif TC', serif;
+    .avatar {
+        transition: none; // Disable rotate transform temporarily due to unkonwn brightness bug in Chromium (Yes not in Safari)
+    }
+    .motto {
+        font-family: 'Zen Maru Gothic', sans-serif;
+    }
+    .keywords {
+        font-family: 'Klee One', cursive;
+    }
+    .links {
+        font-variant: small-caps;
+    }
+}
+
+sup {
+    font-family: 'glyph-correction', 'Source Code Pro', 'Noto Serif TC', 'Noto Serif SC', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, th, dt {
+    font-weight: normal;
+}
+
+[data-type="poetry"], [data-type="aphorism"] {
+    .post-body {
+        p {
+            font-family: 'glyph-correction', 'Long Cang', 'Noto Serif TC', 'Noto Serif SC', 'EB Garamond', serif;
+            font-size: 125%;
+        }
+        sup {
+            font-size: 50%;
+        }
+    }
+    .caption {
+        font-size: 75%;
+    }
+}
+
+article:lang(hant) {
+    .post-title {
+        font-family: 'Yuji Mai', 'Noto Serif TC', serif;
+    }
+    
+    .post-body p {
+        --line-height: 1.618;
+
+        line-height: var(--line-height) !important;
+        font-family: 'Klee One', 'Noto Serif TC', serif !important;
+    }
+}
+
+[data-type="about"] {
+    .post-title {
+        font-family: 'Yuji Mai', 'Noto Serif TC', serif;
+    }
+}
+
+.tag-cloud {
+    width: 42em;
+    margin: 0 -3em;
+}
+.tag-cloud-item {
+    font-family: 'glyph-correction', 'Long Cang', 'Noto Serif TC', 'Noto Serif SC', serif;
+}
+
+body, .back-to-top, ::-webkit-scrollbar-track {
+    background-color: #eceff1;
+}
+.list-item ::before {
+    border-color: #eceff1;
+}
+
+.main {
+    padding-top: 5em;
+}
+.single {
+    padding-bottom: 22em;
+}
+
+.menu {
+    font-size: 85%;
+    padding: 0.1em 0 0.3em;
+    background-color: #fff;
+}
+
+.menu-item {
+    margin: 0 1.618em;
+}
+
+.single .main-inner {
+    margin-top: 7em;
+}
+.list-group {
+    margin-top: -2em;
+}
+.post-title {
+    margin-top: 0;
+}
+.post-body {
+    margin-top: 3em !important;
+}
+
+.post {
+    background-color: #fcfaf2;
+    padding: 6em;
+    margin: -6em;
+}
+
+.back-to-top {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5.6em;
+    font-size: 80%;
+    a {
+        padding: 0.5em;
+    }
+}
+
+.footer {
+    color: #ccc;
+    background-color: #000;
+    font-size: 80%;
+}
+.footer-inner {
+    padding: 2em 2em 2em 2.05em;
+}
+.copyleft-symbol {
+    position: relative;
+    top: 0.05em;
+}
+
+code {
+    padding: 0;
+    background-color: unset;
+    font-size: 1em !important;
+}
+pre {
+    background-color: unset;
+    padding: 0;
+    font-size: 1em;
+    line-height: $lineHeight;
+}
+
+@media (max-width: $maxWidth) {
+    html, body {
+        font-size: 16px;
+    }
+    body {
+        background-color: #fcfaf2;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #fcfaf2;
+    }
+    .list-item ::before {
+        border-color: #fcfaf2;
+    }
+    .menu, .back-to-top {
+        background-color: #eee;
+    }
+    .single .main-inner {
+        width: auto;
+        margin-top: 0;
+    }
+    .single {
+        padding-bottom: 15em;
+    }
+    .menu-item {
+        margin: 0;
+    }
+    .post {
+        padding: 0;
+        margin: 0;
+    }
+    .tag-cloud {
+        width: auto;
+        margin: 0;
+    }
+    #back-to-top {
+        display: block;
+    }
+}
